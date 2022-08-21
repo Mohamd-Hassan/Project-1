@@ -159,26 +159,33 @@ transform: translate( -50%, -50% );
 width: 320px;
 max-width: 100%;
 }
+
 .landing .intro-text h1 {
     margin: 0;
     color: rgb(27, 26, 33);
     font-weight: bold;
     font-size: 60px;
-    white-space: nowrap ;
- 
- 
+    
 }
 .landing .intro-text p {
     font-size: 20px;
     line-height: 1.8;
     
 }
+@media (max-width: 1100px) {
+    .landing .intro-text {
+        position:absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate( -50%, -50% );
+    }
+}
 .features {
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #f6f6f6;
-
 }
+
 .features .content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
